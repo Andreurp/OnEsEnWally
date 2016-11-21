@@ -25,8 +25,7 @@ public class Procesa {
 	        	throw new FilerException("FITXER INCORRECTE");
 	        }else{
 	        	System.out.println("En Wally esta en la linia " + n_linia);
-	        }
-				
+	        }	
 		} else {
 			System.out.println("No hi ha en Wally");
 		}
