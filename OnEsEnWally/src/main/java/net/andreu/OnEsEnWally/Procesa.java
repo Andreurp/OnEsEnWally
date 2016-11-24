@@ -17,8 +17,8 @@ public class Procesa {
 	public Posicio llegirFitxer(String arxiu) throws FitxerExeption {
 		BufferedReader br = null;
 		Pattern p = Pattern.compile("(([\\s|\\\\.|\\\\,]" + paraula + ")|^" + paraula + ")([\\s|\\\\.|\\\\,]|$)");
-		int n_linia = 0;
-		int n_columne = 0;
+		int n_linia = 1;
+		int n_columne = 1;
 
 		try {
 			br = new BufferedReader(new FileReader(arxiu));
@@ -26,9 +26,10 @@ public class Procesa {
 			while ((linia = br.readLine()) != null) {
 				if ((n_columne = procesaLinia(linia, p)) != -1) {
                 	pocsicions.add(new Posicio(n_linia, n_columne));
-                } 
+                }
+				n_linia++; 
 			}
-			n_linia ++;
+			
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

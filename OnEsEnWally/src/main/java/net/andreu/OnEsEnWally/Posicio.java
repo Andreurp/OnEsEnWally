@@ -13,6 +13,6 @@ public class Posicio {
 
 	@Override
 	public String toString() {
-		return "En Wally esta a la fila:" + fila + ", i a la columne:" + columne;
+		return "En Wally esta a la fila: " + fila + ", i a la columne: " + columne;
 	}
 }

@@ -7,7 +7,7 @@ package net.andreu.OnEsEnWally;
 public class App {
 	
 	private String arxiu = "src/main/resources/fitxer.txt";
-	Procesa p;
+	Procesa p = new Procesa();
 
 	public static void main(String[] args) {
 		App a = new App();
